@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;500;600;700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Room homepage</title>
 
@@ -17,28 +18,32 @@
 </head>
 <body>
   <header>
-    <div class='top'>
+    <div class='modal' id='modal'>
+      
+      <ul class='menu-lien_accordeon'>
+          <li><a href="#top" class="menu-close"><i class="fas fa-times"></i></a></li>
+          <div class="menus-liens">
+          <li class='menu-lien'>Home</li> 
+          <li class='menu-lien'>Shop</li> 
+          <li class='menu-lien'>About</li> 
+          <li class='menu-lien'>Contact</li>
+        </div> 
+      </ul>
+    </div>
+    <div class='top' id="top">
       <img class='image-mobile1' src="./images/mobile-image-hero-1.jpg" alt="imagemobile">
       <div class="header">
-      <h1 class="top-title">room</h1>
-      <nav class='menu'>
-        <ul class='menu-accordeonv modal'>
-          <li>
-            <label for="menu1"><i class="fas fa-bars"></i></label>
-            <input type="checkbox" name="menu" id="menu1"/>
-              <ul class='menu-lien_accordeon'>
-                <li class='menu-lien'>Home</li> 
-                <li class='menu-lien'>Shop</li> 
-                <li class='menu-lien'>About</li> 
-                <li class='menu-lien'>Contact</li> 
-              </ul>
-            </li>
-          </ul>
-        </nav>
+        <h1 class="top-title">room</h1>
+        <a class='menu' href="#modal"><i class="fas fa-bars"></i></a>
       </div>
-</div>
+      <div class='bottom'>
+          <a href="" class='arrow'><i class="fas fa-chevron-left"></i></a>
+          <a href="" class='arrow'><i class="fas fa-chevron-right"></i></a>
+      </div>
+    </div>
 </header>
 <div>
+
   Discover innovative ways to decorate
 
   We provide unmatched quality, comfort, and style for property owners across the country. 

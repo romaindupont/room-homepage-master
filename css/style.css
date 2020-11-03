@@ -1,55 +1,99 @@
+html {
+    font-family: 'Spartan', sans-serif;
+}
+li {
+    padding-right: 2px;
+}
 header {
     height: 100%;
     position: relative;
     
 }
-
 .image-mobile1{  
     width: 100%;
-    
-
-
 }
 
 .header{
     position: absolute;
-    top:0;
+    top:10%;
     display: flex;
+    width: 90%;
+    justify-content: space-around;
+}
+.bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 1.5rem;
+    color: white;
+    background-color: black;
+    width: 30%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly ;
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+.arrow{
+    color: white;
+    text-decoration: none;
 
     
-
-
+}
+.top{
+    display: flex;
 }
 .menu{
-   font-size: 1.5rem;
+    font-size: 1.5rem;
     color: white;
-    
-    
-   
+    line-height: 2;
+}
+.menu-close{
+    color: grey;
+    font-size : 2rem;
+    line-height: 3.5;
+    margin-right: 10%;
+}
 
+.menu-lien_accordeon{
+    color: black;
+    background-color: white;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type:none;
+    display: inline-flex;
+    justify-content: space-around;
+    height: 10%;
     
- 
+}
+.menus-liens{
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+}
+.menu-lien {
+    font-weight:700 ;
+    line-height: 7;
+    
+    
+
 }
 .top-title {
+    text-align: center;
     order:1;
     color: white;
-    
+    margin:0;
+
 
 }
-/* .top{
-    background-image:url('../images/mobile-image-hero-1.jpg');
-    background-repeat: no-repeat;
-    background-position:center ;
-    background-size: cover;
-    
 
-} */
-/* .modal {
+.modal {
     position: fixed;
     z-index: 99999;
     top: 0;
     right: 0;
-    bottom: 70%;
+    bottom: 10%;
     left: 0;
     background: rgba(0,0,0,0.8);
     opacity: 0;
@@ -59,23 +103,16 @@ header {
   .modal:target{
     opacity: 1;
     pointer-events: auto;
-  } */
-/*   .modal > div {
+  } 
+   .modal > div {
     max-width: 50%;
     position: relative;
     margin: 10% auto;
     padding :0.8rem;
     border-radius: 0.2rem;
     background: #fff;
-  } */
+  }
 
-.menu-lien_accordeon{
-    height: 0;
-    overflow: hidden;
-    transition: :all 0.25s ease-in-out;
-    list-style-type:none;
-    background-color:white;
-}
 
 input[type="checkbox"] {
     display: none;
@@ -86,5 +123,5 @@ input:checked + .menu-lien_accordeon {
 }
 
 .menu-accordeon {
-list-style-type:none;
+
 }
