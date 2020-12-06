@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" media="screen" href="./css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;500;600;700&display=swap" rel="stylesheet">
@@ -23,15 +23,21 @@
       <ul class='menu-lien_accordeon'>
           <li><a href="#top" class="menu-close"><i class="fas fa-times"></i></a></li>
           <div class="menus-liens">
-          <li class='menu-lien'>Home</li> 
-          <li class='menu-lien'>Shop</li> 
-          <li class='menu-lien'>About</li> 
-          <li class='menu-lien'>Contact</li>
-        </div> 
+            <li class='menu-lien'>Home</li> 
+            <li class='menu-lien'>Shop</li> 
+            <li class='menu-lien'>About</li> 
+            <li class='menu-lien'>Contact</li>
+          </div> 
       </ul>
     </div>
     <div class='top' id="top">
-      <img class='image-mobile1' src="./images/mobile-image-hero-1.jpg" alt="imagemobile">
+      <img class='image-mobile1' id='image-mobile1' src="./images/mobile-image-hero-1.jpg" alt="imagemobile">
+      <img class='image-mobile2' id='image-mobile2' src="./images/mobile-image-hero-2.jpg" alt="imagemobile">
+      <img class='image-mobile3' id='image-mobile3' src="./images/mobile-image-hero-3.jpg" alt="imagemobile">
+
+      <img class='image-desktop1' id='image-desktop1' src="./images/desktop-image-hero-1.jpg" alt="image-desktop1">
+      <img class='image-desktop2' id='image-desktop2' src="./images/desktop-image-hero-2.jpg" alt="image-desktop2">
+      <img class='image-desktop3' id='image-desktop3' src="./images/desktop-image-hero-3.jpg" alt="image-desktop3">
       <div class="header">
         <h1 class="top-title">room</h1>
         <a class='menu' href="#modal"><i class="fas fa-bars"></i></a>
@@ -51,9 +57,6 @@
   <p>We provide unmatched quality, comfort, and style for property owners across the country. 
   Our experts combine form andnfunction in bringing your vision to life. Create a room in your 
   own style with our collection and make your property a reflection of you and what you love.</p>
-<div class='bottom-container'>
-  <a href="">Shop now <i class="fas fa-long-arrow-alt-right"></i></a>
-</div>
 </section>
 <section class='second-container' id='second-container'>
  <h1>We are available all across the globe</h1>
@@ -62,8 +65,6 @@
   Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
   store locator. Any questions? Don't hesitate to contact us today.
 </p>
-
-<a href="">Shop now</a>
 </section>
 <section class='third-container' id='third-container'>
   <h1>
@@ -74,9 +75,11 @@
   to ensure that every product is made as perfect and as consistent as possible. With three decades of 
   experience in this industry, we understand what customers want for their home and office.
 </p>
-  <a href="">Shop now</a>
 </section>
-<img class='image-mobile1' src="./images/image-about-dark.jpg" alt="mobile-image-dark">
+<div class='bottom-container'>
+  <a href="">Shop now <i class="fas fa-long-arrow-alt-right"></i></a>
+</div>
+<img class='image-mobiledark' src="./images/image-about-dark.jpg" alt="mobile-image-dark">
 </div>
 </main>
 <footer>
@@ -88,13 +91,22 @@
   or anything in between. Product specialists are available to help you create your dream space.
 </p>
 </footer>
-<img class='image-mobile1' src="./images/image-about-light.jpg" alt="mobile-image-dark">
+<img class='image-mobilelight' src="./images/image-about-light.jpg" alt="mobile-image-ligth">
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Romain Dupont</a>.
   </div>
- <script src="./js/app.js">
+ 
+<!--  <script src="./js/app.js">
 
- </script> 
+ </script> --> 
+ <script type="text/javascript">
+if(window.innerWidth<1440){
+const srcCharge = document.createElement('script');
+srcCharge.src='./js/app.js';
+srcCharge.type='text/javascript';
+document.getElementsByTagName('body')[0].appendChild(srcCharge);}
+
+</script>
 </body>
 </html>

@@ -13,13 +13,30 @@ header {
     position: relative;
     
 }
-.image-mobile1{ 
-    /* position: relative; */
+.image-mobiledark, .image-mobilelight {
+    display:block;
     width: 100%;
-    
-    
-
 }
+
+ .image-mobile1{ 
+    display:block;
+    width: 100%;
+ }
+ .image-mobile2{ 
+    display:none;
+    width: 100%;
+ }
+
+ .image-mobile3{ 
+    display:none;
+    width: 100%;
+ }
+ .image-desktop1, 
+ .image-desktop2, .image-desktop3 {
+     display: none;
+
+ }
+
 
 .header{
     position: absolute;
@@ -137,9 +154,15 @@ input:checked + .menu-lien_accordeon {
     display: flex;
     flex-direction: column;
 }
-section, footer {
-    margin: 20% 5%;
+section {
+    margin: 0% 5%;
     line-height: 1.5;
+}
+
+footer {
+    line-height: 1.5;
+    margin-left: 5%;
+    margin-top: 10%;
 }
 p {
     margin-bottom: 2.5rem;
@@ -149,6 +172,8 @@ p {
 
     display: flex;
     text-align: center;
+    margin-bottom:10%;
+    margin-left: 5%;
 
 }
 a {
@@ -164,6 +189,14 @@ a {
 i {
     font-size: 30px;
 }
+
+footer > h1 {
+    text-transform: uppercase;
+    font-size: 90%;
+    word-spacing: 1rem;
+    font-weight: 900;
+    
+}
 .first-container {
     display:block;
 }
@@ -176,4 +209,236 @@ i {
 }
 .attribution {
     font-size: 0.2rem;
+}
+
+@media screen and (min-width:1440px) {
+    header {
+        display: flex;
+        width:50%;
+        height: 35%;
+    }
+    .image-mobile1, .image-mobile2, .image-mobile3 {
+        display:none;
+    }
+    .image-desktop1 {
+        display: block;
+        width: 68vh;
+        clear: none;
+        height: 55vh;
+
+    }
+    .image-desktop2 {
+        display: none;
+        width:80%;
+    }
+    .image-desktop3 {
+        display: none;
+        width:80%;
+    }
+    .header{
+        position: absolute;
+        top: 10%;
+        display: inline-block;
+        width: 0%;
+        justify-content: space-around;
+        padding-left: 10%;
+    }
+    .bottom {
+        position: absolute;
+        bottom: 0;
+        left: 100%;
+        font-size: 1.5rem;
+        color: white;
+        background-color: black;
+        width: 30%;
+        height: 10%;
+        display: flex;
+        justify-content: space-evenly ;
+        padding-top: 5%;
+        padding-bottom: 2%;
+        padding-left: 0;
+    }
+    .arrow{
+        color: grey;
+        text-decoration: none;
+
+        
+    
+        
+    }
+    .top{
+        display: flex;
+        position: absolute;
+        
+    
+    }
+    .menu{
+        display: none;
+        font-size: 1.5rem;
+        color: white;
+        line-height: 2;
+    }
+    .menu-close{
+        display: none;
+    }
+    
+    .menu-lien_accordeon{
+        color: white;
+        background-color: transparent;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style-type:none;
+        display: inline-flex;
+        justify-content: space-around;
+        height: 15%;
+        margin-left: 100%;
+        
+    }
+    .menus-liens{
+        display: flex;
+        justify-content: space-around;
+        width: 75%;
+    }
+    .menu-lien {
+        font-weight:700 ;
+        line-height: 7;
+        padding-right: 40%;
+        
+        
+    
+    }
+    .top-title {
+        text-align: left;
+        order:1;
+        color: white;
+        margin:0;
+    
+    
+    }
+    
+    .modal {
+        display: flex;
+        width: 50%;
+        margin-top: 5.3%;
+        position: relative;
+        z-index: 99999;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background:transparent;
+        opacity: 1;
+        pointer-events: none;
+        padding-left: 3rem;
+      
+      }
+      .modal:target{
+        opacity: 0;
+        pointer-events: auto;
+      } 
+       .modal > div {
+        max-width: 50%;
+        position: relative;
+        margin: 10% auto;
+        padding :0.8rem;
+        border-radius: 0.2rem;
+        background: #fff;
+      }
+
+
+    
+    
+    input[type="checkbox"] {
+        display: none;
+    }
+    
+    input:checked + .menu-lien_accordeon {
+        height: 5em;
+    }
+    main{
+        position: relative;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 65%;
+        margin-right: 5%;
+        font-size: 1rem;
+    }
+    section {
+        margin: 0% 5%;
+        line-height: 1.5;
+    }
+    
+    footer {
+        line-height: 1.5;
+        margin-left: 40%;
+        margin-top: 14%;
+        margin-right: 40%;
+        font-size: 0.8rem;
+    }
+    p {
+        margin-bottom: 2.5rem;
+        color: rgba(0,0,0,0.4);
+    }
+    .bottom-container {
+    
+        display: flex;
+        text-align: center;
+        margin-bottom:10%;
+        margin-left: 5%;
+    
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 80%;
+        text-transform: uppercase;
+        word-spacing:0.6rem ;
+        letter-spacing: 1rem;
+    
+            
+    }
+    i {
+        font-size: 30px;
+    }
+    
+    footer > h1 {
+        text-transform: uppercase;
+        font-size: 90%;
+        word-spacing: 1rem;
+        font-weight: 900;
+        
+    }
+    .first-container {
+        display:block;
+    }
+    
+    .second-container {
+        display:none;
+    }
+    .third-container {
+        display: none;
+    }
+    .attribution {
+        font-size: 0.2rem;
+        margin-top: 5%;
+    }
+    .image-mobilelight {
+        display:block;
+        width: 35vw;
+        height: 24vh;
+        position: absolute;
+        top: 55%;
+        right: 0%;
+    }
+    .image-mobiledark {
+        display: block;
+        width: 35%;
+        position: absolute;
+        top: 139%;
+        height: 24vh;
+        right: 65%;
+    }
 }
