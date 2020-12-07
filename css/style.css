@@ -212,6 +212,12 @@ footer > h1 {
 }
 
 @media screen and (min-width:1440px) {
+    body {    
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0;
+    }
+    
     header {
         display: flex;
         width:50%;
@@ -222,9 +228,10 @@ footer > h1 {
     }
     .image-desktop1 {
         display: block;
-        width: 68vh;
+        width: 60vw;
         clear: none;
-        height: 55vh;
+        height: 60vh;
+        grid-column: 1/2;
 
     }
     .image-desktop2 {
@@ -250,13 +257,13 @@ footer > h1 {
         font-size: 1.5rem;
         color: white;
         background-color: black;
-        width: 30%;
-        height: 10%;
+        width: 20%;
+        height: 6%;
         display: flex;
-        justify-content: space-evenly ;
-        padding-top: 5%;
+        justify-content: space-evenly;
+        padding-top: 2%;
         padding-bottom: 2%;
-        padding-left: 0;
+        padding-left: 1%;
     }
     .arrow{
         color: grey;
@@ -320,17 +327,17 @@ footer > h1 {
     .modal {
         display: flex;
         width: 50%;
-        margin-top: 5.3%;
+        margin-top: 3.3%;
         position: relative;
         z-index: 99999;
         top: 0;
         right: 0;
         bottom: 0;
         left: 0;
-        background:transparent;
+        background: transparent;
         opacity: 1;
         pointer-events: none;
-        padding-left: 3rem;
+        padding-left: 17rem;
       
       }
       .modal:target{
@@ -360,11 +367,10 @@ footer > h1 {
         position: relative;
     }
     .container {
-        display: flex;
-        flex-direction: column;
-        margin-left: 65%;
-        margin-right: 5%;
-        font-size: 1rem;
+    margin-left: 25%;
+    margin-right: 5%;
+    grid-column: 2/2;
+    margin-top: 5%;
     }
     section {
         margin: 0% 5%;
@@ -373,9 +379,9 @@ footer > h1 {
     
     footer {
         line-height: 1.5;
-        margin-left: 40%;
+        margin-left: 83%;
         margin-top: 14%;
-        margin-right: 40%;
+        margin-right: -20%;
         font-size: 0.8rem;
     }
     p {
@@ -424,21 +430,25 @@ footer > h1 {
     .attribution {
         font-size: 0.2rem;
         margin-top: 5%;
+        margin-right: 5%;
+        margin-left: 46%;
     }
     .image-mobilelight {
-        display:block;
-        width: 35vw;
-        height: 24vh;
+        display: block;
+        width: 36vw;
+        height: 41vh;
         position: absolute;
-        top: 55%;
+        top: 60%;
         right: 0%;
     }
     .image-mobiledark {
-        display: block;
-        width: 35%;
-        position: absolute;
-        top: 139%;
-        height: 24vh;
-        right: 65%;
+    /* display: block; */
+    /* grid-column: 1/2; */
+    /* grid-row: 1/2; */
+    width: 36vw;
+    position: absolute;
+    top: 116%;
+    height: 41vh;
+    right: 128%;
     }
 }
